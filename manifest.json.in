@@ -1,0 +1,15 @@
+{
+    "name": "snakeladder.anmolgarg",
+    "description": "Offline 2-player Snake and Ladder game",
+    "architecture": "$ENV{ARCH}",
+    "title": "Snakes and Ladders",
+    "hooks": {
+        "snakeladder": {
+            "apparmor": "snakeladder.apparmor",
+            "desktop":  "snakeladder.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Anmol Garg <anmolgarg12203@gmail.com>",
+    "framework" : "$ENV{CLICK_FRAMEWORK}"
+}

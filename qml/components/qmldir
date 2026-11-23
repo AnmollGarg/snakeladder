@@ -1,0 +1,8 @@
+singleton Theme 1.0 Theme.qml
+BoardCell 1.0 BoardCell.qml
+BoardGrid 1.0 BoardGrid.qml
+PlayerCard 1.0 PlayerCard.qml
+DiceWidget 1.0 DiceWidget.qml
+EventPopup 1.0 EventPopup.qml
+SoundManager 1.0 SoundManager.qml
+GameState 1.0 GameState.qml

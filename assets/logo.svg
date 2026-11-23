@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="diceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e4e4e7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark minimalist rounded base -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#27272a" stroke-width="2" opacity="0.6"/>
+
+  <!-- Subtle 10x10 board grid dots in background -->
+  <g fill="#3f3f46" opacity="0.35">
+    <circle cx="100" cy="100" r="3"/><circle cx="160" cy="100" r="3"/><circle cx="220" cy="100" r="3"/><circle cx="280" cy="100" r="3"/><circle cx="340" cy="100" r="3"/><circle cx="400" cy="100" r="3"/>
+    <circle cx="100" cy="160" r="3"/><circle cx="160" cy="160" r="3"/><circle cx="220" cy="160" r="3"/><circle cx="280" cy="160" r="3"/><circle cx="340" cy="160" r="3"/><circle cx="400" cy="160" r="3"/>
+    <circle cx="100" cy="220" r="3"/><circle cx="160" cy="220" r="3"/><circle cx="220" cy="220" r="3"/><circle cx="280" cy="220" r="3"/><circle cx="340" cy="220" r="3"/><circle cx="400" cy="220" r="3"/>
+    <circle cx="100" cy="280" r="3"/><circle cx="160" cy="280" r="3"/><circle cx="220" cy="280" r="3"/><circle cx="280" cy="280" r="3"/><circle cx="340" cy="280" r="3"/><circle cx="400" cy="280" r="3"/>
+    <circle cx="100" cy="340" r="3"/><circle cx="160" cy="340" r="3"/><circle cx="220" cy="340" r="3"/><circle cx="280" cy="340" r="3"/><circle cx="340" cy="340" r="3"/><circle cx="400" cy="340" r="3"/>
+    <circle cx="100" cy="400" r="3"/><circle cx="160" cy="400" r="3"/><circle cx="220" cy="400" r="3"/><circle cx="280" cy="400" r="3"/><circle cx="340" cy="400" r="3"/><circle cx="400" cy="400" r="3"/>
+  </g>
+
+  <!-- 1. CLEAR UNMISTAKABLE LADDER (Left to Top-Center) -->
+  <g stroke="#ffffff" stroke-linecap="round">
+    <!-- Rails -->
+    <line x1="140" y1="410" x2="245" y2="90" stroke-width="11"/>
+    <line x1="205" y1="430" x2="310" y2="110" stroke-width="11"/>
+    <!-- Rungs -->
+    <line x1="156" y1="360" x2="221" y2="380" stroke-width="8"/>
+    <line x1="173" y1="310" x2="238" y2="330" stroke-width="8"/>
+    <line x1="189" y1="260" x2="254" y2="280" stroke-width="8"/>
+    <line x1="206" y1="210" x2="271" y2="230" stroke-width="8"/>
+    <line x1="222" y1="160" x2="287" y2="180" stroke-width="8"/>
+    <line x1="239" y1="110" x2="304" y2="130" stroke-width="8"/>
+  </g>
+
+  <!-- 2. CLEAR UNMISTAKABLE SNAKE (Right to Center, weaving) -->
+  <!-- Cutout shadow behind snake for crisp layering -->
+  <path d="M 380 90 C 430 140, 410 220, 310 240 C 220 260, 200 340, 270 380" 
+        fill="none" stroke="#09090b" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Snake body -->
+  <path d="M 380 90 C 430 140, 410 220, 310 240 C 220 260, 200 340, 270 380" 
+        fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Snake Head -->
+  <circle cx="382" cy="88" r="14" fill="#ffffff"/>
+  <circle cx="384" cy="85" r="4" fill="#09090b"/>
+  <!-- Forked tongue subtle detail -->
+  <path d="M 394 82 L 406 74 M 394 82 L 406 86" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 3. CLEAR UNMISTAKABLE DICE (Paasa at Bottom Right) -->
+  <g transform="translate(270, 260) rotate(-10)">
+    <!-- Dice Outer Shadow for pop -->
+    <rect x="-4" y="-4" width="158" height="158" rx="34" fill="#09090b" opacity="0.9"/>
+    <!-- Dice Body (Clean White Rounded Cube) -->
+    <rect x="0" y="0" width="150" height="150" rx="32" fill="url(#diceGrad)" stroke="#ffffff" stroke-width="2"/>
+    <!-- Dice Pips (Iconic 5 Dots in Dark Black) -->
+    <circle cx="38" cy="38" r="11" fill="#09090b"/>
+    <circle cx="112" cy="38" r="11" fill="#09090b"/>
+    <circle cx="75" cy="75" r="11" fill="#09090b"/>
+    <circle cx="38" cy="112" r="11" fill="#09090b"/>
+    <circle cx="112" cy="112" r="11" fill="#09090b"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+[Desktop Entry]
+_Name=Snakes and Ladders
+_Comment=Offline 2-player Snake and Ladder game
+Exec=qmlscene %U qml/Main.qml
+Icon=assets/logo.svg
+Terminal=false
+Type=Application
+Categories=Game;BoardGame;
+X-Lomiri-Touch=true
+X-Ubuntu-Touch=true

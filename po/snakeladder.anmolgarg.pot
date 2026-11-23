@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the snakeladder.anmolgarg package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: snakeladder.anmolgarg\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-23 10:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/components/EventPopup.qml:87
+msgid "Tap to close"
+msgstr ""
+
+#: ../qml/components/EventPopup.qml:87
+msgid "Tap to close (auto closes in 3s)"
+msgstr ""
+
+#: ../qml/components/EventPopup.qml:110
+msgid "Ladder Climbed!"
+msgstr ""
+
+#: ../qml/components/EventPopup.qml:111
+msgid "Player %1 climbed up from %2 to %3!"
+msgstr ""
+
+#: ../qml/components/EventPopup.qml:120
+msgid "GIANT SNAKE BITE!"
+msgstr ""
+
+#: ../qml/components/EventPopup.qml:121
+msgid ""
+"DISASTER! Player %1 stepped on square %2 and plummeted all the way down to "
+"%3!"
+msgstr ""
+
+#: ../qml/components/EventPopup.qml:123
+msgid "Snake Bite!"
+msgstr ""
+
+#: ../qml/components/EventPopup.qml:124
+msgid "Oh no! Player %1 was bitten at %2 and slid down to %3!"
+msgstr ""
+
+#: ../qml/components/EventPopup.qml:133
+msgid "VICTORY!"
+msgstr ""
+
+#: ../qml/components/EventPopup.qml:134
+msgid "Player %1 reached square 100 and won the game!"
+msgstr ""
+
+#: ../qml/components/PlayerCard.qml:51
+msgid "Square: "
+msgstr ""
+
+#: ../qml/pages/AboutPage.qml:10
+msgid "Rules & About"
+msgstr ""
+
+#: ../qml/pages/AboutPage.qml:36
+msgid "How to Play"
+msgstr ""
+
+#: ../qml/pages/AboutPage.qml:59
+msgid ""
+"• Two players take turns rolling the dice.\n"
+"• Landing on the bottom of a Ladder climbs you up to its top.\n"
+"• Landing on the head of a Snake slides you down to its tail.\n"
+"• Rolling a 6 earns you an extra turn!\n"
+"• You must reach square 100 by exact roll to win."
+msgstr ""
+
+#: ../qml/pages/AboutPage.qml:74
+msgid "About"
+msgstr ""
+
+#: ../qml/pages/AboutPage.qml:92
+msgid ""
+"Offline 2-player Snake and Ladder game built for Ubuntu Touch using QML and "
+"CMake."
+msgstr ""
+
+#: ../qml/pages/GamePage.qml:39
+msgid "Snakes & Ladders"
+msgstr ""
+
+#: ../qml/pages/GamePage.qml:43
+msgid "Mute"
+msgstr ""
+
+#: ../qml/pages/GamePage.qml:43
+msgid "Unmute"
+msgstr ""
+
+#: ../qml/pages/GamePage.qml:48
+msgid "Rules"
+msgstr ""
+
+#: ../qml/pages/GamePage.qml:53
+msgid "Restart"
+msgstr ""
+
+#: ../qml/pages/GamePage.qml:101
+msgid "Player 1"
+msgstr ""
+
+#: ../qml/pages/GamePage.qml:117
+msgid "Player 2"
+msgstr ""
+
+#: ../qml/pages/GamePage.qml:134
+msgid "Play Again"
+msgstr ""
+
+#: ../qml/pages/GamePage.qml:135
+msgid "Rolling..."
+msgstr ""
+
+#: ../qml/pages/GamePage.qml:136
+msgid "Moving..."
+msgstr ""
+
+#: ../qml/pages/GamePage.qml:137
+msgid "Roll Dice"
+msgstr ""
+
+#: ../qml/pages/GamePage.qml:156
+msgid "Reset"
+msgstr ""
+
+#: snakeladder.desktop.in.h:1
+msgid "Snakes and Ladders"
+msgstr ""
+
+#: snakeladder.desktop.in.h:2
+msgid "Offline 2-player Snake and Ladder game"
+msgstr ""

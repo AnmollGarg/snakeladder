@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: snakeladder.anmolgarg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-23 10:22+0000\n"
+"POT-Creation-Date: 2026-11-25 23:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,8 +59,12 @@ msgstr ""
 msgid "Player %1 reached square 100 and won the game!"
 msgstr ""
 
-#: ../qml/components/PlayerCard.qml:51
-msgid "Square: "
+#: ../qml/components/PlayerCard.qml:53
+msgid "Square: %1"
+msgstr ""
+
+#: ../qml/components/PlayerCard.qml:61
+msgid "Wins: %1"
 msgstr ""
 
 #: ../qml/pages/AboutPage.qml:10
@@ -114,28 +118,16 @@ msgstr ""
 msgid "Player 1"
 msgstr ""
 
-#: ../qml/pages/GamePage.qml:117
+#: ../qml/pages/GamePage.qml:119
 msgid "Player 2"
 msgstr ""
 
 #: ../qml/pages/GamePage.qml:134
+msgid "New Game"
+msgstr ""
+
+#: ../qml/pages/GamePage.qml:134
 msgid "Play Again"
-msgstr ""
-
-#: ../qml/pages/GamePage.qml:135
-msgid "Rolling..."
-msgstr ""
-
-#: ../qml/pages/GamePage.qml:136
-msgid "Moving..."
-msgstr ""
-
-#: ../qml/pages/GamePage.qml:137
-msgid "Roll Dice"
-msgstr ""
-
-#: ../qml/pages/GamePage.qml:156
-msgid "Reset"
 msgstr ""
 
 #: snakeladder.desktop.in.h:1

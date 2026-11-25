@@ -33,7 +33,7 @@ Rectangle {
         spacing: units.dp(1)
         z: 1
 
-        Text {
+                Label {
             anchors.horizontalCenter: parent.horizontalCenter
             text: cellNum
             font.pixelSize: {

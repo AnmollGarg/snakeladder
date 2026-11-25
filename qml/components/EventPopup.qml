@@ -63,30 +63,30 @@ Item {
                     smooth: true
                 }
 
-                Text {
+                Label {
                     anchors.verticalCenter: parent.verticalCenter
                     text: popupTitle
-                    font.pixelSize: units.dp(16)
+                    textSize: Label.Large
                     font.bold: true
                     color: accentColor
                 }
             }
 
-            Text {
+            Label {
                 width: parent.width
                 text: popupMessage
                 color: Theme.textBody
-                font.pixelSize: units.dp(13)
+                textSize: Label.Medium
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.Wrap
                 lineHeight: 1.3
             }
 
-            Text {
+            Label {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: isWin ? i18n.tr("Tap to close") : i18n.tr("Tap to close (auto closes in 3s)")
                 color: Theme.textSubtle
-                font.pixelSize: units.dp(10)
+                textSize: Label.Small
             }
         }
 

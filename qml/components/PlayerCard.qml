@@ -11,6 +11,8 @@ Rectangle {
     property int position: 1
     property bool isActive: false
 
+    property int wins: 0
+
     height: units.gu(8)
     radius: units.dp(6)
 
@@ -38,20 +40,27 @@ Rectangle {
                 anchors.verticalCenter: parent.verticalCenter
             }
 
-            Text {
+            Label {
                 text: playerName
                 color: Theme.textPrimary
                 font.bold: isActive
-                font.pixelSize: units.dp(14)
+                textSize: Label.Medium
             }
         }
 
-        Text {
+        Label {
             anchors.horizontalCenter: parent.horizontalCenter
             text: i18n.tr("Square: %1").arg(position)
             color: Theme.textTertiary
-            font.pixelSize: units.dp(13)
             font.bold: isActive
+            textSize: Label.Small
+        }
+
+        Label {
+            anchors.horizontalCenter: parent.horizontalCenter
+            text: i18n.tr("Wins: %1").arg(wins)
+            color: Theme.textSecondary
+            textSize: Label.Small
         }
     }
 }

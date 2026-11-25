@@ -1,4 +1,5 @@
 import QtQuick 2.7
+import Qt.labs.settings 1.0
 import "../logic/GameLogic.js" as GameLogic
 
 Item {
@@ -11,6 +12,9 @@ Item {
     property bool isRolling: false
     property bool isMoving: false
     property int winner: 0
+
+    property int p1Wins: 0
+    property int p2Wins: 0
 
     property int _animPlayer: 1
     property int _animCurrentStep: 1
@@ -69,16 +73,21 @@ Item {
         stepTimer.restart();
     }
 
-    function finishMove() {
+
+    function finishMove(){
         isMoving = false;
         _animPhase = 0;
 
-        if (_animMoveResult && _animMoveResult.won) {
+         if (_animMoveResult && _animMoveResult.won) {
             winner = _animPlayer;
+            if (winner === 1) {
+                p1Wins++;
+            } else if (winner === 2) {
+                p2Wins++;
+            }
             playerWon(_animPlayer);
             return;
         }
-
         if (diceValue !== 6) {
             playerTurn = (playerTurn === 1) ? 2 : 1;
         }
@@ -148,5 +157,12 @@ Item {
                 gameState.executeMove(gameState.diceValue);
             }
         }
+    }
+
+    Settings{
+        id: stateSettings
+        category: "GameStats"
+        property alias p1Wins: gameState.p1Wins
+        property alias p2Wins: gameState.p2Wins
     }
 }

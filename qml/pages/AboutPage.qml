@@ -32,10 +32,10 @@ Page {
                 spacing: units.gu(2)
                 topPadding: units.gu(2)
 
-                Text {
+                Label {
                     text: i18n.tr("How to Play")
                     color: Theme.textPrimary
-                    font.pixelSize: units.dp(18)
+                    textSize: Label.Large
                     font.bold: true
                 }
 
@@ -53,7 +53,7 @@ Page {
                         anchors.centerIn: parent
                         spacing: units.gu(1)
 
-                        Text {
+                        Label {
                             width: parent.width
                             text: i18n.tr(
                                 "• Two players take turns rolling the dice.\n" +
@@ -63,17 +63,17 @@ Page {
                                 "• You must reach square 100 by exact roll to win."
                             )
                             color: Theme.textSecondary
-                            font.pixelSize: units.dp(14)
+                            textSize: Label.Medium          
                             wrapMode: Text.Wrap
                             lineHeight: 1.4
                         }
                     }
                 }
 
-                Text {
+                Label {
                     text: i18n.tr("About")
                     color: Theme.textPrimary
-                    font.pixelSize: units.dp(16)
+                    textSize: Label.Large
                     font.bold: true
                 }
 
@@ -85,14 +85,14 @@ Page {
                     border.color: Theme.borderDefault
                     border.width: 1
 
-                    Text {
+                    Label {
                         id: aboutText
                         anchors.centerIn: parent
                         width: parent.width - units.gu(2)
                         text: i18n.tr("Offline 2-player Snake and Ladder game built for Ubuntu Touch using QML and CMake.")
                         color: Theme.textMuted
-                        font.pixelSize: units.dp(13)
                         wrapMode: Text.Wrap
+                        textSize: Label.Medium          
                     }
                 }
             }

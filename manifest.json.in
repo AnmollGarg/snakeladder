@@ -9,7 +9,7 @@
             "desktop":  "snakeladder.desktop"
         }
     },
-    "version": "1.0.0",
+    "version": "1.0.1",
     "maintainer": "Anmol Garg <anmolgarg12203@gmail.com>",
     "framework" : "$ENV{CLICK_FRAMEWORK}"
 }

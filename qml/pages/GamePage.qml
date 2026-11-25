@@ -102,6 +102,7 @@ Page {
                         playerColor: Theme.player1
                         position: gameState.p1Pos
                         isActive: gameState.playerTurn === 1 && gameState.winner === 0
+                        wins: gameState.p1Wins
                     }
 
                     DiceWidget {
@@ -109,6 +110,7 @@ Page {
                         isRolling: gameState.isRolling
                         enabled: !gameState.isRolling && !gameState.isMoving && gameState.winner === 0
                         onRollRequested: gameState.rollDice()
+                        activeColor: gameState.playerTurn === 1 ? Theme.player1 : Theme.player2
                     }
 
                     PlayerCard {
@@ -118,43 +120,19 @@ Page {
                         playerColor: Theme.player2
                         position: gameState.p2Pos
                         isActive: gameState.playerTurn === 2 && gameState.winner === 0
+                        wins: gameState.p2Wins
                     }
                 }
 
                 RowLayout {
                     anchors.horizontalCenter: parent.horizontalCenter
                     width: board.width
-                    spacing: units.gu(1)
 
                     Button {
-                        id: rollBtn
                         Layout.fillWidth: true
                         height: units.gu(5)
-                        text: {
-                            if (gameState.winner !== 0) return i18n.tr("Play Again");
-                            if (gameState.isRolling) return i18n.tr("Rolling...");
-                            if (gameState.isMoving) return i18n.tr("Moving...");
-                            return i18n.tr("Roll Dice");
-                        }
-                        color: {
-                            if (gameState.winner !== 0) return Theme.popupWinAccent;
-                            return gameState.playerTurn === 1 ? Theme.player1 : Theme.player2;
-                        }
-                        enabled: !gameState.isRolling && !gameState.isMoving
-                        onClicked: {
-                            if (gameState.winner !== 0) {
-                                gameState.resetGame();
-                            } else {
-                                gameState.rollDice();
-                            }
-                        }
-                    }
-
-                    Button {
-                        Layout.preferredWidth: units.gu(12)
-                        height: units.gu(5)
-                        text: i18n.tr("Reset")
-                        color: Theme.bgWhite
+                        text: gameState.winner !== 0 ? i18n.tr("Play Again") : i18n.tr("New Game")
+                        color: Theme.player1
                         onClicked: gameState.resetGame()
                     }
                 }

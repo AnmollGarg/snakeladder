@@ -2,14 +2,14 @@ pragma Singleton
 import QtQuick 2.7
 
 QtObject {
-    readonly property color player1:         "#e11d48"
-    readonly property color player2:         "#2563eb"
-    readonly property color player1ActiveBg: "#fff1f2"
-    readonly property color player2ActiveBg: "#eff6ff"
-
-    readonly property color bgPrimary:    "#f8fafc"
-    readonly property color bgWhite:      "#ffffff"
-    readonly property color overlayBlack: "#000000"
+    // Official Ubuntu Suru Palette
+    readonly property color player1:         "#E95420"
+    readonly property color player2:         "#77216F"
+    readonly property color player1ActiveBg: "#FDF3F0"
+    readonly property color player2ActiveBg: "#F6ECF5"
+    readonly property color bgPrimary:    "#F7F7F7"
+    readonly property color bgWhite:      "#FFFFFF"
+    readonly property color overlayBlack: "#111111"
 
     readonly property color borderDefault: "#cbd5e1"
     readonly property color borderBoard:   "#94a3b8"

@@ -9,23 +9,25 @@ Rectangle {
     property bool enabled: true
     signal rollRequested()
 
+    property color activeColor: Theme.player1
+
     width: units.gu(8)
     height: units.gu(8)
     radius: units.dp(8)
     color: Theme.bgWhite
     opacity: enabled ? 1.0 : 0.5
-    border.color: isRolling ? Theme.diceRolling : Theme.borderDefault
+    border.color: isRolling ? Theme.diceRolling : (enabled ? activeColor : Theme.borderDefault)
     border.width: 2
 
     Behavior on opacity {
         NumberAnimation { duration: 150 }
     }
 
-    Text {
+    Label {
         id: diceLabel
         anchors.centerIn: parent
         text: value
-        font.pixelSize: units.dp(30)
+        textSize: Label.XLarge
         font.bold: true
         color: isRolling ? Theme.diceRolling : Theme.textPrimary
         scale: isRolling ? 1.25 : 1.0
@@ -34,6 +36,16 @@ Rectangle {
             NumberAnimation { duration: 80 }
         }
     }
+
+    Label {
+    anchors.bottom: parent.bottom
+    anchors.bottomMargin: units.dp(4)
+    anchors.horizontalCenter: parent.horizontalCenter
+    text: isRolling ? "..." : "ROLL"
+    textSize: Label.XSmall
+    color: isRolling ? Theme.diceRolling : activeColor
+    visible: enabled || isRolling
+}
 
     MouseArea {
         anchors.fill: parent
